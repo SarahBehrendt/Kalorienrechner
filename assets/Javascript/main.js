@@ -24,8 +24,7 @@ function getDark() {
     return grundumsatz.toFixed(0);
   }
 
-  function gesamtumsatz(event){
-    event.preventDefault();
+  function gesamtumsatz(){
     let inputPal = document.querySelector("#pal").value;
     let output2 = document.querySelector(".output2");
     let grundumsatzValue = grundumsatz();

@@ -1,0 +1,208 @@
+/* Basic */
+
+@font-face {
+    font-family: Indie;
+    src: url(../font/IndieFlower-Regular.ttf);
+}
+
+html{
+    font-size: 62,5%;
+    font-family: Indie;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header{
+    width: 100vw;
+    height: 30vh;
+    margin: 0 0 2rem 0;
+}
+
+.header-img{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+img{
+    width: 4vw;
+    height: 5vh;
+    border: 2px solid black;
+    border-radius: 80px;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+.header-headline{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 4rem;
+    color:rgb(50,50,50);
+    border-bottom: 3px solid rgba(128, 0, 128, 0.563);
+    border-top: 3px solid rgba(128, 0, 128, 0.563);
+   
+}
+
+/* Main Section input*/
+
+.sec-headline{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 2rem 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    font-weight: 600;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+input{
+    font-size: 1.3rem;
+    background-color: rgb(194, 194, 194);
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(231, 112, 229);
+}
+
+.checkbox{
+    margin: 2rem 0;
+}
+
+#calc{
+    padding: 0 1rem;
+    background-image: linear-gradient(to bottom right, rgb(231, 148, 229), rgb(238, 238, 234));
+    color: rgb(50,50,50);
+    font-family: Indie;
+}
+
+#calc:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.output-container{
+    display: flex;
+    justify-content: center;
+}
+
+.output, .output2{
+    width:30vw ;
+    height: 5vh;
+    background-color: rgb(194,194,194);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    color: rgb(231, 112, 229);
+}
+
+h3{
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 2rem 0 -3rem 0;
+}
+
+/* Section Table */
+
+.table div{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+}
+
+th{
+    width: 25vw;
+    padding: 2rem 0;
+    background-color: rgb(185, 185, 185);
+    font-size: 1.4rem;
+}
+ 
+td{
+    width: 25vw;
+    text-align: center;
+    padding: 1.4rem 1rem;
+    background-color: rgb(200, 200, 200);
+    font-size: 1.3rem;
+}
+
+#pal{
+    margin: 0 0 1.5rem 0;
+}
+
+ #calc-pal{
+    padding: 0 1rem;
+    background-image: linear-gradient(to bottom right, rgb(231, 148, 229), rgb(238, 238, 234));
+    color: rgb(50,50,50);
+    font-family: Indie;
+}
+
+#calc-pal:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer p{
+    font-size: 1.2rem;
+    width: 75vw;
+    text-align: center;
+    margin: 0 0 1.2rem 0;
+}
+
+footer h4{
+    color: red;
+    font-size: 1.5rem;
+    margin: 0 0 2rem 0;
+}
+
+/* Dark-Mode */
+
+body {
+    transition: 0.5s;
+}
+  
+.dark {
+    background-color: rgb(45, 45, 45);
+    color: white;
+}
+
+.dark h1{
+    color: white;
+}
+
+
+
+
+
+
+

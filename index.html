@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-img">
+            <img onclick="getDark()" src="./assets/img/icons8-tag-und-nacht-100.png" alt="darkmode">
+        </div>
+        <div class="header-headline">
+            <h1>Kalorienzähler</h1> 
+        </div>
+    </header>
+    <main>
+    <section>
+        <div class="sec-headline">
+              <h2>Hier können Sie ihren Grundumsatz berechnen!</h2>
+        </div>
+      
+         <form onsubmit="grundumsatz(); return false">
+            <label for="Weight">Gewicht in Kg:</label>
+            <input type="text" id="weight">
+            <label for="size">Größe in cm:</label>
+            <input type="text" id="size">
+            <label for="age">Alter:</label>
+            <input type="text" id="age">
+            <div class="checkbox">
+                 <label for="male">Männlich</label>
+                 <input id="male" type="checkbox" />
+                 <label for="female">Weiblich</label>
+                 <input id="female" type="checkbox" />
+            </div>
+         
+            <input type="submit" name="Rechnen" id="calc" value="Berechnen">
+          </form>
+          <div class="output-container">
+            <p class="output"></p>
+          </div>
+    </section>
+    <section class="table">
+        <div>
+            <h2>Hier könenen Sie ihren Leistungsumsatz berechnen!</h2> 
+        </div>
+       <table>
+        <tr>
+            <th>PAL-FAktor</th>
+            <th>Tätigkeit</th>
+            <th>Beispiele</th>
+        </tr>
+        <tr>
+           <td>1,2</td>
+           <td>Nur sitzen und liegen</td>
+           <td>Alte, gebrechliche Menschen</td>
+        </tr>
+        <tr>
+            <td>14,-1,5</td>
+            <td>Fast ausschließlich sitzend, wenig Freizeitaktivtäten</td>
+            <td>Schreibtischtätigkeit, Studierende</td>
+        </tr>
+        <tr>
+            <td>1,6-1,7</td>
+            <td>Überwiegend sitzend, mit zusätzlichen stehenden / gehenden Tätigkeiten</td>
+            <td>Kraftfahrer, Laboranten</td>
+        </tr>
+        <tr>
+            <td>1,8-1,9</td>
+            <td>Überwiegend stehende / gehende Tätigkeiten</td>
+            <td>Verkäufer/innen, Kellner, Handwerker, Hausfrau / Hausmann</td>
+        </tr>
+        <tr>
+            <td>2,0-2,4</td>
+            <td>Körperlich anstrengende berufliche Tätigkeiten</td>
+            <td>Bergleute, Landwirte, Waldarbeiter, Hochleistungssport</td>
+        </tr>
+        </table>
+        <form onsubmit="gesamtumsatz(event); return false">
+            <label for="pal">PAL-Wert</label>
+            <input type="text" id="pal">
+            <input type="submit" id="calc-pal" value="Berechnen">
+         </form> 
+          <h3>Ihre Kalorienbedarf</h3>
+         <div class="output-container">
+             <p class="output2"></p>
+         </div>
+    </section>
+</main>
+<footer>
+    <p>Wenn Sie abnemen möchten sollte Sie ca 500-800kcal von ihrem ausgerechnten Kalorienbedarf abziehen!</p>
+    <p>  Und wenn Sie zunehmen möchten sollten Sie ca 500-800kcal zu ihrem ausgerechnten Kalorienbedarf addieren!</p>
+    <h4>Gehen Sie niemals unter Ihren Grundumsatz!</h4>
+</footer>
+ <script type="text/javascript" src="./assets/Javascript/main.js"></script>   
+</body>
+</html>
